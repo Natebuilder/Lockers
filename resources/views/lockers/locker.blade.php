@@ -9,9 +9,7 @@
 </head>
 <body>
     <div class="table">
-        <div class="row">
-
-        </div>
+        <h1>Kluisjes</h1>
     </div>
 </body>
 </html>
