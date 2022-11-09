@@ -15,7 +15,7 @@
                     <h2>Kluisjes</h2>
                 </div>
                 <div class="pull-right mb-2">
-                    
+
                 </div>
             </div>
         </div>
@@ -27,7 +27,8 @@
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Kluisje</th>
+                <th>Kluisnummer</th>
+                <th>Student</th>
             </tr>
             </thead>
 </body>
