@@ -16,6 +16,8 @@ return new class extends Migration
         //
         Schema::create('lockers', function (Blueprint $table) {
             $table->id();
+            $table->lockernumber();
+            $table->student_id();
             $table->timestamps();
         });
     }
@@ -28,5 +30,6 @@ return new class extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('customers');
     }
 };
