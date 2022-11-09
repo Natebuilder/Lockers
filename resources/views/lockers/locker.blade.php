@@ -29,6 +29,7 @@
             <tr>
                 <th>Kluisnummer</th>
                 <th>Student</th>
+                <th>Actie</th>
             </tr>
             </thead>
 </body>
