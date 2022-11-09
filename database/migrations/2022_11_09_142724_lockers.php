@@ -16,8 +16,7 @@ return new class extends Migration
         //
         Schema::create('lockers', function (Blueprint $table) {
             $table->id();
-            $table->lockernumber();
-            $table->student_id();
+            $table->integer('lockernumber');
             $table->timestamps();
         });
     }

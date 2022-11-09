@@ -13,7 +13,7 @@ class LockerController extends Controller
      */
     public function index()
     {
-        //
+        return view('lockers.locker');
     }
 
     /**
