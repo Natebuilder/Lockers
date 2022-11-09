@@ -14,6 +14,10 @@ return new class extends Migration
     public function up()
     {
         //
+        Schema::create('lockers', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+        });
     }
 
     /**
