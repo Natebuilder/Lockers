@@ -13,14 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('lockers', function (Blueprint $table) {
+        Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('lockernumber')->unique();
-            $table->enum('size', ['small', 'medium', 'large']);
-            $table->timestamp('occupied_at'); // '2022-11-16 15:31:22'
-            $table->timestamp('released_at');
-            $table->foreignId('student_id')->references('id')->on('students');
+            $table->string("firstname");
+            $table->string("lastname");
+            $table->string("studentnummer")->unique();
             $table->timestamps();
         });
     }
@@ -32,7 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('students');
     }
 };

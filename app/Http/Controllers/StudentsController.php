@@ -3,19 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Locker;
 
-class LockerController extends Controller
+class StudentsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function showLockers()
+    public function index()
     {
-        $lockers = Locker::all();
-        return view('locker');
+        //
     }
 
     /**
