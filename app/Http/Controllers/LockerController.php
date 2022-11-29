@@ -15,7 +15,10 @@ class LockerController extends Controller
     public function showLockers()
     {
         $lockers = Locker::all();
-        return view('locker');
+        return view('locker', [
+            'lockers' => $lockers 
+        ]);
+        
     }
 
     /**

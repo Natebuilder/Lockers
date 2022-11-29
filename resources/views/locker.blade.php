@@ -11,7 +11,7 @@
     <h1>Kluisjes</h1>
 
     @foreach($lockers as $locker)
-        
+        <li> {{ $locker->lockernumber }} </li>
     @endforeach
 </body>
 </html>

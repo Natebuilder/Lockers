@@ -18,9 +18,9 @@ return new class extends Migration
             $table->id();
             $table->string('lockernumber')->unique();
             $table->enum('size', ['small', 'medium', 'large']);
-            $table->timestamp('occupied_at'); // '2022-11-16 15:31:22'
-            $table->timestamp('released_at');
-            $table->foreignId('student_id')->references('id')->on('students');
+            $table->timestamp('occupied_at')->nullable(); // '2022-11-16 15:31:22'
+            $table->timestamp('released_at')->nullable();
+            $table->foreignId('student_id')->nullable()->references('id')->on('students');
             $table->timestamps();
         });
     }
